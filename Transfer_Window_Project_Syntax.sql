@@ -49,7 +49,8 @@ CREATE TABLE players_gamedetails (
 SELECT * FROM public.players_gamedetails;
 
 -- Check for duplicates.
-SELECT ID, COUNT(*) FROM players_gamedetails
+SELECT ID, COUNT(*) 
+FROM players_gamedetails
 GROUP BY ID
 HAVING COUNT(*) > 1;
 
@@ -149,7 +150,8 @@ CREATE TABLE players_personal (
 SELECT * FROM public.players_personal;
 
 -- Check for duplicates.
-SELECT ID, COUNT(*) FROM players_personal
+SELECT ID, COUNT(*) 
+FROM players_personal
 GROUP BY ID
 HAVING COUNT(*) > 1;
    
